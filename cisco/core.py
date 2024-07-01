@@ -20,8 +20,8 @@ def com_client_verbose(client_class_name):
 def prd_verbose(prd):
     orphan =win32.Dispatch(prd)
     orphan_events = win32.WithEvents(orphan, EventHandler)
-    orphan.InitControl("30.209.222.14", "42028", "30.209.223.14", "42028", "D:\\log\\", "7001");
-    #orphan.AgentLogon("69092", "69244", "123456");
+    orphan.InitControl("192.168.1.0", "42028", "192.168.1.1", "42028", "D:\\log\\", "7001");
+    #orphan.AgentLogon("81000", "81000", "123456");
     
 def class_name_verbose(clsid):
     title = clsid + " module"
